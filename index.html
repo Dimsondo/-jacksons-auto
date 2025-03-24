@@ -5,71 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Джексоны Автоподбор</title>
     <link rel="stylesheet" href="css/animate.min.css">
-   <script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/slick.min.js"></script>
-
-<script>
-    $(document).ready(function(){
-        $('.car-carousel').slick({
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            autoplay: true,
-            autoplaySpeed: 3000
-        });
-    });
-</script>
-    <style>
-        .about-container {
-            background: #f8f9fa;
-            padding: 40px;
-            border-radius: 10px;
-            text-align: center;
-            margin: 20px auto;
-            max-width: 800px;
-        }
-        .process-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 50px 0;
-        }
-        .process-step {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease-in-out;
-        }
-        .process-step.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .process-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #007BFF;
-            background: #f1f1f1;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .process-text {
-            font-size: 1.2em;
-            max-width: 500px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -144,6 +82,17 @@
         </div>
     </section>
     
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Телефон: +375 29 123-45-67</p>
+        <p>Email: info@jacksons-auto.com</p>
+        <p>Instagram: <a href="https://instagram.com/jacksons_auto">@jacksons_auto</a></p>
+        <p>WhatsApp: <a href="https://wa.me/375291234567">Написать в WhatsApp</a></p>
+        <p>Telegram: <a href="https://t.me/jacksons_auto">@jacksons_auto</a></p>
+    </section>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.car-carousel').slick({
