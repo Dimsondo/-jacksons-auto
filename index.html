@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Джексоны Автоподбор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Джексоны Автоподбор</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#process">Как это работает</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы помогаем вам подобрать и доставить авто из США в Беларусь под ключ.</p>
+    </section>
+    
+    <section id="catalog">
+        <h2>Каталог авто</h2>
+        <div class="car-list">
+            <div class="car">
+                <img src="images/car1.jpg" alt="Авто 1">
+                <h3>BMW X7 2023</h3>
+                <p>Цена: $107,000</p>
+            </div>
+            <div class="car">
+                <img src="images/car2.jpg" alt="Авто 2">
+                <h3>PORSCHE TAYCAN 2023</h3>
+                <p>Цена: $101,395</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="process">
+        <h2>Как это работает</h2>
+        <ol>
+            <li>Вы оставляете заявку</li>
+            <li>Мы подбираем авто под ваш бюджет</li>
+            <li>Проводим проверку истории</li>
+            <li>Выкупаем авто на аукционе</li>
+            <li>Доставляем в Беларусь</li>
+        </ol>
+    </section>
+    
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Телефон: +375 29 123-45-67</p>
+        <p>Email: info@jacksons-auto.com</p>
+        <p>Instagram: <a href="https://instagram.com/jacksons_auto">jacksons_auto</a></p>
+        <p>WhatsApp: <a href="https://wa.me/375291234567">Написать в WhatsApp</a></p>
+        <p>Telegram: <a href="https://t.me/jacksons_auto">@jacksons_auto</a></p>
+    </section>
+    
+    <section id="form">
+        <h2>Оставьте заявку</h2>
+        <form action="https://formspree.io/f/maylyzbd" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="car">Желаемая модель авто:</label>
+            <input type="text" id="car" name="car" required>
+            
+            <label for="message">Дополнительные пожелания:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Джексоны Автоподбор. Все права защищены.</p>
+    </footer>
+</body>
+</html>
